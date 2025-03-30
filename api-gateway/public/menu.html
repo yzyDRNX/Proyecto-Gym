@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monkey Gym - Panel de Control</title>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="./styles/estilos.css">
+    <script src="https://kit.fontawesome.com/696bc5566a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Gabarito:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="menu-background">
+    <header class="admin-header">
+        <div class="logo">
+            <img src="imgs/logo.png" alt="Monkey Gym Logo" class="logo-img">
+            <div class="admin-title">
+                <h1>Panel del Sensei</h1>
+                <p>Gestiona tu dojo con sabiduría</p>
+            </div>
+        </div>
+        <nav class="admin-nav">
+            <ul class="nav-links">
+                <li><a href="index.php"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="menu.php" class="active"><i class="fas fa-dumbbell"></i> Panel</a></li>
+            </ul>
+            <a href="logIn.php" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <div class="menu-grid">
+            <!-- Tarjeta Miembros -->
+            <div class="menu-card" onclick="Miembro()">
+                <div class="card-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Guerreros</h3>
+                    <p>Gestiona a los miembros de nuestro dojo</p>
+                </div>
+                <div class="card-hover">
+                    <span>Administrar <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <!-- Tarjeta Entrenadores -->
+            <div class="menu-card" onclick="Entrenador()">
+                <div class="card-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Maestros</h3>
+                    <p>Controla a los entrenadores del santuario</p>
+                </div>
+                <div class="card-hover">
+                    <span>Administrar <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <!-- Tarjeta Empleados -->
+            <div class="menu-card" onclick="Empleado()">
+                <div class="card-icon">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Samuráis</h3>
+                    <p>Gestiona al personal administrativo</p>
+                </div>
+                <div class="card-hover">
+                    <span>Administrar <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <!-- Tarjeta Rutinas -->
+            <div class="menu-card" onclick="Rutina()">
+                <div class="card-icon">
+                    <i class="fas fa-clipboard-list"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Katana de Entrenamiento</h3>
+                    <p>Crea y modifica rutinas de combate</p>
+                </div>
+                <div class="card-hover">
+                    <span>Administrar <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <!-- Tarjeta Planes -->
+            <div class="menu-card" onclick="Consultas()">
+                <div class="card-icon">
+                    <i class="fas fa-medal"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Rangos</h3>
+                    <p>Configura los planes de membresía</p>
+                </div>
+                <div class="card-hover">
+                    <span>Administrar <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="admin-footer">
+        <p>© 2023 Monkey Gym - Dojo de Hierro | Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

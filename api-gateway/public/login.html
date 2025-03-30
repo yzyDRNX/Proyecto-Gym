@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monkey Gym - Acceso de Guerreros</title>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/696bc5566a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Gabarito:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="login-header">
+        <div class="logo">
+            <a href="index.php"><img src="imgs/logo3.png" alt="Monkey Gym Logo" class="logo-img"></a>
+        </div>
+        <div class="header-text">
+            <h1>Santuario del Hierro</h1>
+            <p>Donde los guerreros se forjan</p>
+        </div>
+    </header>
+
+    <main class="login-main">
+        <div class="login-container">
+            <div class="login-card">
+                <div class="login-header">
+                    <i class="fas fa-dumbbell"></i>
+                    <h2>Acceso de Guerreros</h2>
+                    <p>Ingresa tus credenciales para comenzar tu entrenamiento</p>
+                </div>
+                
+                <form action="" class="login-form">
+                    <div class="input-group">
+                        <div class="input-container">
+                            <i class="fas fa-user-shield"></i>
+                            <input type="text" id="Usuario" name="Usuario" required>
+                            <label for="Usuario">Nombre de Guerrero</label>
+                        </div>
+                        
+                        <div class="input-container">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="Contraseña" name="Contraseña" required>
+                            <label for="Contraseña">Clave Secreta</label>
+                        </div>
+                    </div>
+
+                    <div class="login-actions">
+                        <button type="button" onclick="checklogin()" class="login-btn">
+                            <span>Ingresar al Dojo</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        
+                        <div class="login-links">
+                            <a href="#" class="forgot-password">¿Olvidaste tu clave?</a>
+                            <a href="#" class="register-link">¿No tienes cuenta? <span>Únete</span></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="login-footer">
+        <p>© 2023 Monkey Gym - Todos los derechos reservados</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
