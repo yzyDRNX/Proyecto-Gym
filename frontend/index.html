@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Empleados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gestión de Empleados del Gym</h1>
+
+    <form id="empleadoForm">
+        <input type="hidden" id="id">
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="text" id="puesto" placeholder="Puesto" required>
+        <input type="text" id="telefono" placeholder="Teléfono" required>
+        <button type="submit">Guardar</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Puesto</th>
+                <th>Teléfono</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="empleadosTabla">
+        </tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
