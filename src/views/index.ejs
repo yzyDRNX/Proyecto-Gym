@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Miembros del Gimnasio</title>
+  <link rel="stylesheet" href="..styles/estilos2.css">
+</head>
+<body>
+  <header>
+    <h1>Lista de Miembros del Gimnasio</h1>
+  </header>
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Plan Pagado</th>
+          <th>Expiración</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% miembros.forEach(miembro => { %>
+          <tr>
+            <td><%= miembro.nombre %></td>
+            <td><%= miembro.plan %></td>
+            <td><%= new Date(miembro.expiracion).toLocaleDateString() %></td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>

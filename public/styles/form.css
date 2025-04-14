@@ -1,0 +1,123 @@
+/* Estilos para el botón */
+.boton-agregar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#agregar-miembro {
+    padding: 12px 24px;
+    background: rgba(226, 48, 48, 0.8);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#agregar-miembro:hover {
+    background: rgba(245, 136, 64, 0.356);
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-contenido {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.cerrar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cerrar:hover {
+    color: black;
+}
+
+/* Estilos para el formulario */
+.form-grupo {
+    margin-bottom: 15px;
+}
+
+.form-grupo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-grupo input, .form-grupo select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-acciones {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-guardar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-guardar:hover {
+    background-color: #45a049;
+}
+
+.btn-cancelar {
+    background-color: #f44336;
+    color: white;
+    margin-right: 10px;
+}
+
+.btn-cancelar:hover {
+    background-color: #d32f2f;
+}
+
+.mensaje {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.mensaje-error {
+    background-color: #ffdddd;
+    color: #d8000c;
+}
+
+.mensaje-exito {
+    background-color: #ddffdd;
+    color: #4F8A10;
+}
