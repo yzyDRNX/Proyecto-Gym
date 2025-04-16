@@ -1,0 +1,106 @@
+<!-- frontend/admin.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Vista de Administrador - Gestión de Entrenador</title>
+  <link rel="stylesheet" href="admin-estilo.css">
+</head>
+<body>
+  <!-- Encabezado principal -->
+  <header class="header">
+    <h1>Gestión de Entrenador</h1>
+  </header>
+
+  <!-- Área de Gestión (cuadro principal) -->
+  <section class="admin-container">
+    <!-- Botón para añadir nuevo entrenador -->
+    <div class="add-new">
+      <button id="btn-add" class="btn-add">+</button>
+    </div>
+    
+    <!-- Modal para confirmar eliminación (inicialmente oculto) -->
+    <div id="modal-delete" class="modal hidden">
+      <div class="modal-content">
+        <h2>¿Estás seguro de eliminar a este entrenador?</h2>
+        <div class="modal-actions">
+          <button id="btn-delete-confirm" class="btn-confirm">Aceptar</button>
+          <button id="btn-delete-cancel" class="btn-cancel">Cancelar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal para editar entrenador (inicialmente oculto) -->
+    <div id="modal-edit" class="modal hidden">
+      <div class="modal-content">
+        <h2>Editar Entrenador</h2>
+        <form id="form-edit">
+          <label for="edit-nombre">Nombre</label>
+          <input type="text" id="edit-nombre" name="nombre" required>
+
+          <label for="edit-especialidad">Especialidad</label>
+          <input type="text" id="edit-especialidad" name="especialidad" required>
+
+          <label for="edit-experiencia">Experiencia</label>
+          <input type="number" id="edit-experiencia" name="experiencia" required>
+
+          <label for="edit-telefono">Número telefónico</label>
+          <input type="text" id="edit-telefono" name="telefono" required>
+
+          <label for="edit-correo">Correo electrónico</label>
+          <input type="email" id="edit-correo" name="correo" required>
+
+          <div class="modal-actions">
+            <button type="submit" class="btn-submit">Entrenador Listo</button>
+            <button type="button" id="btn-edit-cancel" class="btn-cancel">Cancelar</button>
+          </div>
+        </form>
+      </div>
+  </div>
+
+
+    <!-- Formulario para agregar nuevo entrenador (inicialmente oculto) -->
+    <div id="form-add" class="form-container hidden">
+      <h2>Agregar Entrenador</h2>
+      <form>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="especialidad">Especialidad</label>
+        <input type="text" id="especialidad" name="especialidad" required>
+        
+        <label for="experiencia">Experiencia</label>
+        <input type="number" id="experiencia" name="experiencia" required>
+        
+        <label for="telefono">Número telefónico</label>
+        <input type="text" id="telefono" name="telefono" required>
+        
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" required>
+        
+        <button type="submit" class="btn-submit">Agregar entrenador</button>
+      </form>
+    </div>
+
+    <!-- Listado de Entrenadores -->
+    <div class="trainers-list">
+      <!-- Cada entrenador se mostrará en una tarjeta -->
+      <div class="trainer-card">
+        <h2>Nombre del Entrenador</h2>
+        <p>Especialidad: ...</p>
+        <p>Experiencia: ...</p>
+        <p>Teléfono: ...</p>
+        <p>Correo: ...</p>
+        <div class="actions">
+          <span class="icon-edit">✎</span>
+          <span class="icon-delete">🗑️</span>
+        </div>
+      </div>
+      <!-- Se repetirán las tarjetas para cada entrenador -->
+    </div>
+  </section>
+
+  <!-- Enlazamos un archivo JS para interactividad, lo crearemos más adelante -->
+  <script src="admin-app.js"></script>
+</body>
+</html>

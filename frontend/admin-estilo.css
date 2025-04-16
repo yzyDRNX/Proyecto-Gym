@@ -1,0 +1,226 @@
+/* frontend/admin-estilos.css */
+
+/* Fondo y fuente general */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #333; /* Gris oscuro */
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Encabezado principal */
+.header {
+  background-color: #000; /* Negro */
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Área de gestión */
+.admin-container {
+  padding: 20px;
+}
+
+/* Botón de añadir nuevo entrenador */
+.add-new {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-add {
+  background-color: #FFA500; /* Naranja */
+  color: #000;
+  border: none;
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Formulario de agregar entrenador */
+.form-container {
+  background-color: #444;
+  padding: 10px;  /* Reducido de 20px a 10px */
+  border-radius: 8px;
+  margin-bottom: 20px;
+  max-width: 400px;  /* Limitar el ancho para que sea más pequeño */
+  margin: 20px auto; /* Centrado y con margen vertical reducido */
+}
+
+.form-container.hidden {
+  display: none;
+}
+
+.form-container h2 {
+  font-size: 1.8rem; /* Puedes reducir el tamaño del título */
+  margin-top: 0;
+  text-align: center;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  margin-top: 8px;
+  font-size: 0.9rem; /* Tamaño de fuente más chico */
+}
+
+.form-container input {
+  padding: 6px;  /* Menos padding para inputs */
+  font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+  border: none;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.btn-submit {
+  background-color: #FFA500;
+  color: #000;
+  border: none;
+  padding: 8px;  /* Menos padding */
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1rem; /* Tamaño de fuente reducido */
+}
+
+/* Listado de entrenadores */
+.trainers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.trainer-card {
+  background-color: #444;
+  border: 3px solid #FFA500; /* Contorno naranja */
+  border-radius: 8px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+}
+
+.trainer-card h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Acciones: iconos para editar y eliminar */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.icon-edit,
+.icon-delete {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #FFA500; /* Iconos en naranja */
+}
+
+/* Modal genérico */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-content {
+  background-color: #444;
+  padding: 30px 40px;
+  border-radius: 8px;
+  border: 3px solid #FFA500;
+  width: 450px; /* Ancho mayor */
+  text-align: center;
+}
+
+/* Título del modal (h2) */
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* Formulario de edición */
+#form-edit {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 15px;
+}
+
+#form-edit label {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#form-edit input {
+  margin-top: 5px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.modal-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Botones */
+.btn-submit {
+  background-color: #FFA500;
+  color: #000;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn-cancel {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Botón de confirmar (Aceptar) */
+.btn-confirm {
+  background-color: #FFA500; /* Naranja */
+  color: #000;               /* Letras negras */
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
